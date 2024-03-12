@@ -1,11 +1,13 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
+    var firstName = document.getElementById('first-name').value;
+    var lastName = document.getElementById('last-name').value;
+    var email = document.getElementById('contact-form-email').value;
+    var phone = document.getElementById('contact-form-phone').value;
+    var message = document.getElementById('contact-form-message').value;
 
     // Validate input (you can add more validation rules)
-    if (name === "" || email === "" || message === "") {
+    if (firstName === "" || lastName === "" || email === "" || phone === "" || message === "") {
         alert("All fields must be filled out");
         return;
     } else if (!email.includes("@")) {
@@ -16,7 +18,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // Send data to the server (you'll need a backend endpoint)
     fetch('https://your-server.com/contact', {
         method: 'POST',
-        body: JSON.stringify({ name: name, email: email, message: message }),
+        body: JSON.stringify({ firstName: firstName, lastName: lastName, email: email, phone: phone, message: message }),
         headers: {
             'Content-Type': 'application/json'
         }
