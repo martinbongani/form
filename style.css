@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    color: black;
+}
+#contact-form {
+    margin: auto;
+    display: block;
+    width: 300px;
+    height: 380px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+.form-row {
+    margin-bottom: 10px;
+}
+.form-input {
+    display: block;
+    width: 290px;
+    height: 20px;
+}
+#contact-form-message {
+    margin-bottom: 10px;
+    width: 295px;
+    height: 100px;
+}
+.form-sub {
+    background-color: lime;
+    width: 299px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: block;
+
+}
+
+.form-error {
+    color: red;
+}
