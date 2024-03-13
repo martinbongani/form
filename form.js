@@ -2,11 +2,11 @@ document
   .getElementById("contact-form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
-    var firstName = document.getElementById("first-name").value;
-    var lastName = document.getElementById("last-name").value;
-    var email = document.getElementById("contact-form-email").value;
-    var phone = document.getElementById("contact-form-phone").value;
-    var message = document.getElementById("contact-form-message").value;
+    const firstName = document.getElementById("first-name").value;
+    const lastName = document.getElementById("last-name").value;
+    const email = document.getElementById("contact-form-email").value;
+    const phone = document.getElementById("contact-form-phone").value;
+    const message = document.getElementById("contact-form-message").value;
 
     // Validate input (you can add more validation rules)
     if (
@@ -34,6 +34,4 @@ document
 
     // Log the user data to the console
     console.log(userData);
-
-   
   });
